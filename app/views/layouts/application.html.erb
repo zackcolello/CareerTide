@@ -8,7 +8,16 @@
 </head>
 <body>
 
+<div class="container">
+  <ul class="nav nav-tabs">
+    <li><%= link_to "Home", {:controller => 'welcome', :action => 'index'} %></li>
+    <li><%= link_to "Sample", {:controller => 'welcome', :action => 'sample'} %></li>
+  </ul>
+</div>
+
 <%= yield %>
+
+
 
 </body>
 </html>
